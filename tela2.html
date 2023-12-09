@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desa1.css">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <section class="ba">
+        <div class="bloco"> 
+        <h1> Desafio número 1 </h1>
+        <img src="./imagens/fome.gif" alt="" class="moving-gif" id="moversempre">
+        <h2> É verdade que você come igual um pedreiro ?  </h2>
+        <img src="./imagens/cisne.gif" alt="" id="cis" class="movendo-imagem">
+        <h3> </h3>
+        <a href="tela3.html"><button id="sim" onclick="sim()"> Verdadeiro! </button></a>
+        <button  id="nao" onclick="nao()"> Falso! </button>
+    </div>
+    </section>
+
+    <script>  
+    
+    function sim() {
+        alert("Verdadeeeeeeee!!! (≧▽≦) ");
+        // redireciona para um URL após clicar no SIM
+        location.href = "./desafio2.html";
+    } 
+    function nao() {
+            alert("Você é crente, não pode mentir, tome vergonha na cara! ಠ_ಠ ");
+        
+        }
+    
+    </script>
+    
+</body>
+</html>

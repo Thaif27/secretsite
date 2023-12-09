@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Está pronta? </title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+      <section class="ba">
+    <div class="bloco"> 
+    <h1> Thaif tem um Desafio para Você....</h1>
+    <img src="https://media.tenor.com/C-S8dtjO6EcAAAAC/jojos-bizarre-adventures-jjba.gif" alt="" >
+    <h2> Maria Ritha... </h2>
+    <h3> Você aceita o desafio ? </h3>
+    <a href="./tela2.html"><button id="sim" onclick="sim()"> Sim! </button></a>
+    <button onmouseover="fuja()" id="nao"> Não! </button>
+</div>
+</section>
+<script>
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+
+
+    }
+    function sim() {
+            alert("Vamos nessa baby!! 😎  (▀̿̿Ĺ̯̿▀̿ ̿) ");
+            
+        }
+</script>
+</body>
+</html>
